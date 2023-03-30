@@ -10,13 +10,8 @@ services:
     volumes:
       - ./external/proxy/caddy/caddy_data:/data
       - ./external/proxy/caddy/caddy_config:/config
-    networks:
-      - shopping
 
 volumes:
   caddy_data:
     external: true
   caddy_config:
-
-networks:
-  shopping:
