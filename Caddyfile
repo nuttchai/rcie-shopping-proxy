@@ -26,7 +26,7 @@ rcie.nuttchai.app {
     import static
     import security
 
-	reverse_proxy /dashboard 10.104.0.4:3000
-	reverse_proxy /api/* 10.104.0.3:8000
+	reverse_proxy /dashboard 178.128.81.143:3000
+	reverse_proxy /api/* 159.65.135.45:8000
 }
 
