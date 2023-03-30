@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  caddy:
+    container_name: caddy
+    restart: unless-stopped
+    image: nuttchai/rcie-proxy:1.0.2
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./config/proxy/caddy/caddy_data:/data
+      - ./config/proxy/caddy/caddy_config:/config
+    networks:
+      - shopping
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
+
+networks:
+  shopping:
