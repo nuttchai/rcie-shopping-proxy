@@ -21,7 +21,7 @@
 	}
 }
 
-user.nuttchai.app {
+rcie.nuttchai.app {
     encode zstd gzip
     import static
     import security
