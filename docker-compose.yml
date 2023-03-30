@@ -8,8 +8,8 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./config/proxy/caddy/caddy_data:/data
-      - ./config/proxy/caddy/caddy_config:/config
+      - ./external/proxy/caddy/caddy_data:/data
+      - ./external/proxy/caddy/caddy_config:/config
     networks:
       - shopping
 
