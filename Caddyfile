@@ -21,11 +21,12 @@
 	}
 }
 
-rcie.nuttchai.app {
+user.nuttchai.app {
     encode zstd gzip
     import static
     import security
 
-	reverse_proxy /* 159.65.135.45:8000
+	reverse_proxy /dashboard 10.104.0.4:3000
+	reverse_proxy /api/* 10.104.0.3:8000
 }
 
