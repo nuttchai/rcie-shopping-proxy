@@ -3,7 +3,7 @@ services:
   caddy:
     container_name: caddy
     restart: unless-stopped
-    image: nuttchai/rcie-proxy:1.0.6
+    image: nuttchai/rcie-proxy:1.0.7
     ports:
       - 80:80
       - 443:443
