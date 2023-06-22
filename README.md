@@ -1,6 +1,6 @@
 ## STEP
 
-Do it manaully, not automation
+Do it manually, not automation
 
 1. Build proxy docker image in the local device
 
