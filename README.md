@@ -1,6 +1,8 @@
 ## STEP
 
-1. Build proxy docker image
+Do it manaully, not automation
+
+1. Build proxy docker image in the local device
 
 ```bash
 docker build -f caddy.dockerfile -t nuttchai/caddy:1.0.0 .
@@ -12,4 +14,4 @@ docker build -f caddy.dockerfile -t nuttchai/caddy:1.0.0 .
 docker push nuttchai/caddy:1.0.0
 ```
 
-3. Import docker image to docker compose file (DON'T FORGET TO USE SAME NETWORK)
+3. In remote device, import docker image from docker compose file (DON'T FORGET TO USE SAME NETWORK)
